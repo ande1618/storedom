@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170222170857) do
+ActiveRecord::Schema.define(version: 20170222172847) do
 
   create_table "items", force: true do |t|
     t.string   "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20170222170857) do
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "password_confirmation"
+    t.integer  "role",                  default: 0
   end
 
 end
